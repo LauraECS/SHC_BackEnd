@@ -1,10 +1,11 @@
 from rest_framework import serializers
-from SHCapp.models.medico import Medico
+from SHCapp.models.paciente import Paciente
 from SHCapp.serializers.userSerializer import UserSerializer
-
-class MedicoSerializer(serializers.ModelSerializer):
+ 
+class PacienteSerializer(serializers.ModelSerializer):
     id_usuario = UserSerializer()
+    id_cuidador = CuidadorSerializer()
 
     class Meta:
-        model = medico
+        model = paciente
         fields = '__all__'
