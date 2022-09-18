@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from SHCapp.models.auxiliar import Auxiliar
+from SHCapp.models.Auxiliar import Auxiliar
 from SHCapp.serializers.userSerializer import UserSerializer
  
 class AuxiliarSerializer(serializers.ModelSerializer):
     id_usuario = UserSerializer()
     
     class Meta:
-        model = auxiliar
+        model = Auxiliar
         fields = '__all__'

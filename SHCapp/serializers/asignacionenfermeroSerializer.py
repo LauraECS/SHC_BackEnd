@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from SHCapp.models.asignacionenfermero import asignacionenfermero
+from SHCapp.models.AsignacionEnfermero import AsignacionEnfermero
 from SHCapp.serializers.userSerializer import UserSerializer
  
 class AsignacionMedicoSerializer(serializers.ModelSerializer):
@@ -7,5 +7,5 @@ class AsignacionMedicoSerializer(serializers.ModelSerializer):
     id_enfermero = EnfermeroSerializer()
 
     class Meta:
-        model = asignacionmedico
+        model = AsignacionMedico
         fields = '__all__'
