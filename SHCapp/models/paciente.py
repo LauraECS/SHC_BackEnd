@@ -2,7 +2,7 @@ from pyexpat import model
 from django.db import models
 from .usuario import User
  
-class Paciente(models.Model):
+class Paciente(User):
     id_paciente = models.IntegerField(primary_key=True)
     latitud = models.CharField('latitud', max_length=100, null=True)
     longitud = models.CharField('longitud', max_length=100, null=True)
