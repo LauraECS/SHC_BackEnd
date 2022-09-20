@@ -20,4 +20,5 @@ from SHCapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('user/', views.userView.UserView.as_view()),
+    path('paciente/', views.PacienteCreateView.as_view()),
 ]
